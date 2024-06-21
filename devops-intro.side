@@ -1,0 +1,152 @@
+{
+  "id": "b1f0a151-eb09-4a32-9d4a-6a2256c40555",
+  "version": "2.0",
+  "name": "devops-intro",
+  "url": "http://localhost:8081/yarin/",
+  "tests": [{
+    "id": "90dcea05-3645-4cf4-849b-336d7d019752",
+    "name": "functionality-test",
+    "commands": [{
+      "id": "d7841c75-5ac3-4499-a7e2-39e0ac70e465",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8081/yarin/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2a264f4e-d9bf-41e7-813c-cfbe1941fc0a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "727x858",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "64b4b90d-b5b3-49a0-89a4-0fb96c8c3638",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h1",
+      "targets": [],
+      "value": "Welcome to My Simple JSP Application"
+    }, {
+      "id": "cfe199f1-ee26-4845-9016-048ee9bddb79",
+      "comment": "",
+      "command": "assertEditable",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3f583c8e-be38-4d14-a287-a8df68d5dcc6",
+      "comment": "",
+      "command": "click",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f1d5775f-4f08-46d3-967f-319c76947ba6",
+      "comment": "",
+      "command": "type",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "yarin"
+    }, {
+      "id": "2d37c8a1-7d4b-4800-945f-cb44dbbcef3d",
+      "comment": "",
+      "command": "assertValue",
+      "target": "id=name",
+      "targets": [],
+      "value": "yarin"
+    }, {
+      "id": "6688ac4c-cc7c-4add-a222-6fedcc1f11bf",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(3)",
+      "targets": [
+        ["css=input:nth-child(3)", "css:finder"],
+        ["xpath=//input[@value='Submit']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0b2ad4ea-9d4c-4371-9d24-e4d2ec1fe410",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Hello, yarin!')]", "xpath:innerText"]
+      ],
+      "value": "Hello, yarin!"
+    }, {
+      "id": "ab570001-3424-481f-86fd-74eab1429ec5",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Go back",
+      "targets": [
+        ["linkText=Go back", "linkText"],
+        ["css=a", "css:finder"],
+        ["xpath=//a[contains(text(),'Go back')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'index.jsp')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Go back')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f27e0e0c-0477-48c6-815d-5a222059fd22",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=About Us",
+      "targets": [
+        ["linkText=About Us", "linkText"],
+        ["css=a", "css:finder"],
+        ["xpath=//a[contains(text(),'About Us')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'about.jsp')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'About Us')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "44e8374a-67e6-422d-8c16-0e1c1f8edebe",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Go back to home",
+      "targets": [
+        ["linkText=Go back to home", "linkText"],
+        ["css=a", "css:finder"],
+        ["xpath=//a[contains(text(),'Go back to home')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'index.jsp')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Go back to home')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "b3b7a73e-8da7-48e6-8c6c-b46136e67147",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["http://localhost:8081/yarin/"],
+  "plugins": []
+}
