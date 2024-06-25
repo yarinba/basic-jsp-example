@@ -11,6 +11,9 @@ pageEncoding="UTF-8"%>
     <p>
       This is a simple JSP application created for the DevOps final project.
     </p>
+    <caption>
+      © Yarin Barnes, 2024
+    </caption>
     <a href="index.jsp">Go back to home</a>
   </body>
 </html>
